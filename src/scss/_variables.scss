@@ -1,0 +1,27 @@
+$gray-900: #121212;
+$black: #000;
+
+$grays: (
+  "900": $gray-900,
+) !default;
+
+$dark: $gray-900 !default;
+
+$theme-colors: (
+  "dark": $dark,
+) !default;
+
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  nav: $spacer * 1.25,
+) !default;
+
+$font-family-sans-serif: "Avenir Next", -apple-system, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;

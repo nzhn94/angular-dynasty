@@ -1,0 +1,21 @@
+.navbar-dark {
+  .navbar-brand {
+    color: $navbar-dark-brand-color;
+
+    &:hover,
+    &:focus {
+      color: $navbar-dark-brand-hover-color;
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: $navbar-dark-brand-color;
+
+      &:hover,
+      &:focus {
+        color: $navbar-dark-brand-color;
+      }
+    }
+  }
+}

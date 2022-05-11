@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "Avenir Next";
+  src: local("Avenir Next"), url("../assets/Avenir-next.otf") format("opentype");
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: local("Avenir Next"),
+    url("../assets/Avenir-next-bold.otf") format("opentype");
+  font-weight: 700;
+}
+
+@import "variables";
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+@import "vendors";
+
+// Layout & components
+@import "navbar";
+
+// Helpers
+@import "bootstrap/scss/helpers";
+
+// Utilities
+@import "bootstrap/scss/utilities/api";
+// scss-docs-end import-stack
+
+// Custom
+.bg-gradient-purple {
+  background-image: linear-gradient(to right, #6013b4, #27054b);
+}
