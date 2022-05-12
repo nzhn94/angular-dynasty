@@ -1,0 +1,23 @@
+// Custom
+@font-face {
+  font-family: "Avenir Next";
+  src: local("Avenir Next"), url("../assets/Avenir-next.otf") format("opentype");
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: local("Avenir Next"),
+    url("../assets/Avenir-next-bold.otf") format("opentype");
+  font-weight: 700;
+}
+
+.circle {
+  background-color: #121212;
+  border: 2px solid #444444;
+  height: 48px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  width: 45.57px;
+  padding: 0.75rem;
+  content: url("data:image/svg+xml,%3Csvg width='19' height='12' viewBox='0 0 19 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.628662 0.314137C0.213026 0.659427 0.170908 1.25924 0.53459 1.65386L9.28715 11.4724L18.0397 1.6539C18.4034 1.25928 18.3613 0.659469 17.9457 0.314178C17.53 -0.0311119 16.8983 0.00887475 16.5346 0.403491L9.28715 8.62413L2.03974 0.40345C1.67606 0.00883292 1.0443 -0.0311537 0.628662 0.314137Z' fill='%23DADADA'/%3E%3C/svg%3E%0A");
+}

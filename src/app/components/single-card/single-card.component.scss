@@ -1,0 +1,15 @@
+.circle {
+  height: 24px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  width: 36px;
+  object-fit: fill;
+  background-image: url("../../../assets/woman-img.png");
+}
+
+@media screen and (max-width: 1440px) {
+  .mt-xl-0 {
+    margin-top: 4rem !important;
+  }
+}
