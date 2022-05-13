@@ -5,3 +5,13 @@
   -webkit-text-stroke-color: white;
   font-size: 12vw;
 }
+
+@media screen and (max-width: 1440px) {
+  .mt-xl-0 {
+    margin-top: 4rem !important;
+  }
+
+  .mt-lg-n8 {
+    margin-top: -3.75rem !important;
+  }
+}

@@ -1,0 +1,28 @@
+.backdrop {
+  background: url("../../../assets/images/image-banner.png") center;
+}
+
+/* Dark foreground layer, with white text, set to "multiply" mix blend mode */
+// .text {
+//   color: white;
+//   background: rgb(0, 0, 0);
+
+//   font: bold 7vw "Avenir Next";
+//   text-align: center;
+//   margin: 0;
+//
+// }
+
+.text {
+  font: bolder 7vw "Avenir Next";
+  text-align: center;
+  margin: 0;
+  background: url("../../../assets/images/image-banner.png") center;
+  background-size: cover;
+  margin: auto;
+  width: 75vw;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+}

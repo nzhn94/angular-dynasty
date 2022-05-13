@@ -1,0 +1,121 @@
+<div class="container text-primary">
+  <div class="row">
+    <div class="d-flex justify-content-between mt-8 pe-4" *ngIf="!cardCol3">
+      <h1 class="text-white fw-bold">Featured {{ text }}</h1>
+      <button
+        class="btn btn-white px-7 py-2 text-indigo fw-bold position-relative"
+        style="top: -1rem"
+      >
+        View more
+      </button>
+    </div>
+
+    <div *ngIf="!cardCol3">
+      <div class="row row-cols-1 row-cols-md-4 g-4 mt-0">
+        <div class="col" *ngFor="let card of cardList">
+          <div class="card">
+            <img src="{{ card.image }}" class="card-img-top" alt="..." />
+            <div class="card-body px-0">
+              <div class="d-flex">
+                <img
+                  src="{{ card.iconImg }}"
+                  style="width: 30px; height: 30px"
+                  alt=""
+                  class="me-2"
+                />
+                <div>
+                  <h5 class="card-title">
+                    {{ card.title }}
+                  </h5>
+                  <div class="card-footer p-0">
+                    <div class="d-flex flex-column">
+                      <small class="text-muted"
+                        >Single elimination • Prize: $400.00 Last updated 3 mins
+                        ago</small
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="progress mt-3"
+                    style="height: 7%; background-color: #444"
+                    *ngIf="isProgressBar"
+                  >
+                    <div
+                      class="progress-bar"
+                      *ngIf="card.progressBar != 0"
+                      [ngStyle]="{
+                        width: card.progressBar ? card.progressBar + '%' : null
+                      }"
+                      role="progressbar"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-8" *ngIf="cardCol3">
+      <div>
+        <app-outline-text
+          [changeSize]="true"
+          [text]="getAhead"
+        ></app-outline-text>
+      </div>
+      <div class="position-relative" style="top: 3rem; z-index: 1">
+        <h1 class="ms-5 fw-bold text-white">Latest News</h1>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4 mt-0">
+        <div class="col" *ngFor="let card of cardList">
+          <div class="card">
+            <img src="{{ card.image }}" class="card-img-top" alt="..." />
+            <div class="card-body px-0">
+              <div class="d-flex">
+                <div>
+                  <h5 class="card-title">
+                    {{ card.title }}
+                  </h5>
+                  <div class="card-footer p-0">
+                    <div class="d-flex flex-column">
+                      <small class="text-muted"
+                        >Veronica Brauer • August 1, 2021</small
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="progress mt-3"
+                    style="height: 7%; background-color: #444"
+                    *ngIf="isProgressBar"
+                  >
+                    <div
+                      class="progress-bar"
+                      *ngIf="card.progressBar != 0"
+                      [ngStyle]="{
+                        width: card.progressBar ? card.progressBar + '%' : null
+                      }"
+                      role="progressbar"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between mt-8 mb-5">
+        <h1 class="text-white fw-bold">Spotlight News</h1>
+        <button
+          class="btn btn-white px-7 py-2 text-indigo fw-bold position-relative"
+          style="top: -1rem"
+        >
+          View more
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

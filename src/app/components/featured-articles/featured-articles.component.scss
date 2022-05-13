@@ -1,0 +1,38 @@
+.text-outline {
+  color: white;
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+.bg-gradient-dark {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 64%,
+    rgba(0, 0, 0, 0.7945772058823529) 86%,
+    rgba(255, 255, 255, 0.010263480392156854) 100%
+  );
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #bababa;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #430e7d;
+}
+
+.shape {
+  width: 0;
+  height: 0;
+  border-top: 50px solid #772bcb;
+  border-right: 50px solid #121212;
+}

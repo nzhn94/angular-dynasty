@@ -7,7 +7,7 @@ $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
 $gray-500: #adb5bd !default;
-$gray-600: #dadada !default;
+$gray-600: #bababa !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #121212;
@@ -101,7 +101,8 @@ $spacers: (
   7: $spacer * 3.25,
   8: $spacer * 4.75,
   9: $spacer * 5.75,
-  10: $spacer * 11,
+  10: $spacer * 9.5,
+  11: $spacer * 13,
   100: $spacer * 28,
 ) !default;
 
@@ -118,4 +119,12 @@ $display-font-sizes: (
   4: 3.75rem,
   5: 3rem,
   6: 2.5rem,
+  7: 6rem,
 ) !default;
+
+$card-color: $white !default;
+$card-bg: $dark !default;
+
+$accordion-button-icon: url("data:image/svg+xml,%3Csvg width='32' height='33' viewBox='6 0 23 46' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M22 16.834C22 17.3863 21.5523 17.834 21 17.834L11 17.834C10.4477 17.834 10 17.3863 10 16.834C10 16.2817 10.4477 15.834 11 15.834L21 15.834C21.5523 15.834 22 16.2817 22 16.834Z' fill='%23A168DF'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16 10.834C16.5523 10.834 17 11.2817 17 11.834L17 21.834C17 22.3863 16.5523 22.834 16 22.834C15.4477 22.834 15 22.3863 15 21.834L15 11.834C15 11.2817 15.4477 10.834 16 10.834Z' fill='%23A168DF'/%3E%3Cpath d='M16 30.834C8.26801 30.834 2 24.566 2 16.834H-2C-2 26.7751 6.05887 34.834 16 34.834V30.834ZM30 16.834C30 24.566 23.732 30.834 16 30.834V34.834C25.9411 34.834 34 26.7751 34 16.834H30ZM16 2.83398C23.732 2.83398 30 9.102 30 16.834H34C34 6.89286 25.9411 -1.16602 16 -1.16602V2.83398ZM16 -1.16602C6.05887 -1.16602 -2 6.89286 -2 16.834H2C2 9.102 8.26801 2.83398 16 2.83398V-1.16602Z' fill='%23A168DF'/%3E%3C/svg%3E%0A");
+$accordion-color: $white;
+$accordion-bg: #303030;
